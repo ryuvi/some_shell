@@ -233,5 +233,8 @@ while True:
     elif cm == 'find':
         search_file(cm, splitted_command[1], splitted_command[2], splitted_command[3])
 
+    elif cm.startswith('./'):
+        system(command)
+
     else:
         print('Command not found on system!\n')
